@@ -6,6 +6,6 @@ Skompiluj poleceniem (`$` To znak zachęty powłoki - shell)
 
 Uruchom poleceniem
 
-```$ ./main```
+```$ ./prog```
 
 

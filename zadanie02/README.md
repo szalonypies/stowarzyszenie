@@ -8,7 +8,7 @@ Skompiluj poleceniem (`$` To znak zachęty powłoki - shell)
 
 Uruchom poleceniem
 
-```$ ./main```
+```$ ./prog```
 
 1. Wprowadź liczbę i zatwierdź enterem. Zobacz czy wynik jest prawidłowy.
 
