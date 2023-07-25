@@ -5,10 +5,13 @@
 int main(int argument_count, char** vector_of_parameters) {
    printf("Podaj słowo (maksymalnie 9 znaków)\n");
    char string_to_read_into[10];
-   fscanf(stdin, "%9s", string_to_read_into);
+   // wczytaj string za pomocą fscanf(stdin, ...
+   // pamiętając o dobrym format stringu (ograniczenie maksymalnej długości)
    
    printf("Słowo, które podałeś to '%s'\n", string_to_read_into);
-   size_t string_length = strlen(string_to_read_into);
+   // odkomentuj
+   // size_t string_length = strlen(string_to_read_into);
+   // czemu size_t a nie int?
    printf("Jego długość to %zu\n", string_length);
 
    return 0;   
