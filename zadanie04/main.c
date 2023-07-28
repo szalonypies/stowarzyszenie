@@ -2,37 +2,12 @@
 #include <string.h>
 #include <stdbool.h>
 
-char do_malej_litery(char c) {
-   if (c >= 'A' && c <= 'Z') {
-      return c - 'A' + 'a';
-   }
-   return c;
-}
-
-bool jest_cyfra_hex_lub_x(char c) {
-   return c == 'x' || (c >= '0' && c <= '9') || (c >= 'a' && c <= 'f');
-}
-
 int szesnastkowy_na_dziesiętny(char* hex) {
    int sum = 0;
    for (int i=0; hex[i] != 0; i++) {
-      sum = sum * 16;
-      char c = do_malej_litery(hex[i]);
-      if (c != 'x') {
-         int digit;
-         if (c >= '0' && c <= '9') {
-            digit = c - '0';
-         }
-         else if (c >= 'a' && c <= 'f') {
-            digit = c - 'a' + 10;
-         }
-         else {
-            return sum;
-         }
-         sum += digit;
-      }
+      // stosując algorytm hornera oblicz i zwróć za pomocą return wartość
+      // dziesiętną liczby 16-tkowej
    }
-   return sum;
 }
 
 #define ASSERT_EQUALS_INT(expected, given) if (expected != given) { printf("Expected value %d but given %d on %s:%d\n", expected, given, __FILE__, __LINE__); }
