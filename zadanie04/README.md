@@ -1,4 +1,4 @@
-# zadanie 2
+# zadanie 4
 
 Napisz program edytując plik `main.c` tam gdzie są komentarze zmień kod tak, aby testy przechodziły.
 

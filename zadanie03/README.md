@@ -1,4 +1,4 @@
-# zadanie 2
+# zadanie 3
 
 Napisz program edytując plik `main.c` tam gdzie są komentarze zmień kod.
 
