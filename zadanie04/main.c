@@ -10,9 +10,10 @@ int szesnastkowy_na_dziesiętny(char* hex) {
    }
 }
 
-#define ASSERT_EQUALS_INT(expected, given) if (expected != given) { printf("Expected value %d but given %d on %s:%d\n", expected, given, __FILE__, __LINE__); }
+#define ASSERT_EQUALS_INT(expected, given) if (expected != given) { printf("Expected value %d but given %d on %s:%d\n", expected, given, __FILE__, __LINE__); exit(1); }
 
 int main(int argument_count, char** vector_of_parameters) {
+   ASSERT_EQUALS_INT(0, szesnastkowy_na_dziesiętny(""));
    ASSERT_EQUALS_INT(0, szesnastkowy_na_dziesiętny("0"));
    ASSERT_EQUALS_INT(1, szesnastkowy_na_dziesiętny("1"));
    ASSERT_EQUALS_INT(5, szesnastkowy_na_dziesiętny("5"));
